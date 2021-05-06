@@ -1,0 +1,54 @@
+<% layout('/layouts/boilerplate') %>
+<div class="row">
+    <h1 class="text-center">New News</h1>
+    <div class="col-6 offset-3">
+        <form action="/newsapp" method="post" novalidate class="validated-form">
+            <div class="mb-3">
+                <label class="form-label" for="description">Description</label>
+                <textarea class="form-control" type="text" id="description" name="newsapp[description]" required></textarea>     
+                <div class="valid-feedback">Looks good!</div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="author">Author</label>
+                <input class="form-control" type="text" id="author" name="newsapp[author]" required>     
+                <div class="valid-feedback">Looks good!</div>
+            </div>
+           <!-- <div class="mb-3">
+                <label class="form-label" for="sourcename">Source Name</label>
+                <input class="form-control" type="text" id="sourcename" name="newsapp[sourcename]">     
+                <div class="valid-feedback">Looks good!</div>
+            </div> -->
+            <div class="mb-3">
+                <label class="form-label" for="title">Title</label>
+                <input class="form-control" type="text" id="title" name="newsapp[title]" required>     
+                <div class="valid-feedback">Looks good!</div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="url">Orignal Url</label>
+                <input class="form-control" type="text" id="url" name="newsapp[url]" required>     
+                <div class="valid-feedback">Looks good!</div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="urlToImage">Image Url</label>
+                <input class="form-control" type="text" id="urlToImage" name="newsapp[urlToImage]" required>     
+                <div class="valid-feedback">Looks good!</div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="publishedAt">Published At</label>
+                <input class="form-control" type="text" id="publishedAt" name="newsapp[publishedAt]" required>     
+                <div class="valid-feedback">Looks good!</div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="Content">Content</label>
+                <input class="form-control" type="text" id="Content" name="newsapp[Content]" required>     
+                <div class="valid-feedback">Looks good!</div>
+            </div>
+            <div class="mb-3">
+                <button class="btn btn-success">Add News</button>
+            </div>
+            
+        </form>
+        <a href="/newsapp">All news</a>
+    </div>
+</div>
+

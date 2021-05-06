@@ -1,0 +1,24 @@
+<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/newsapp"><b>NEWSVPP</b></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      
+      <div class="navbar-nav">
+        <% if(currentUser){ %>
+          <a class="nav-link" href='/newsapp/new'><b>New News</b></a>
+        <% } %> 
+      </div>
+      <div class="navbar-nav mx-auto">
+        <% if(!currentUser){ %>  
+          <a class="nav-link" href='/login'><b>Login</b></a>
+          <a class="nav-link" href='/register'><b>Register</b></a>   
+        <% }else{ %> 
+          <a class="nav-link" href='/logout'><b>Logout</b></a>
+        <% } %> 
+      </div>
+    </div>
+  </div>
+</nav>
